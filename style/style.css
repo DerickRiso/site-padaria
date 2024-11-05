@@ -4,11 +4,99 @@
 
 :root {
     /* Variáveis de cor */
-    --cor1: #401A0C;
+    --cor1: #451E0C;
     --cor2: #BF4417;
     --cor3: #F27329;
     --cor4: #F28B30;
-    --cor5: #F2C288;
+    --cor5: #e7d2b7;
     /* Variáveis de fonte */
     --fonte1: 'Gabriela';
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor5);
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: var(--cor1);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: 1.6em;
+    font-family: var(--fonte1);
+    color: var(--cor5)
+}
+
+header > nav > a {
+    color: var(--cor3);
+    font-size: 1.3em;
+    padding: 0px 10px;
+}
+
+nav {
+    display: flex;
+    padding-left: 50%;
+    margin-right: 20px;
+}
+
+#logo {
+    width: 100px;
+}
+
+/* Conteúdo principal */
+
+main {
+    height: 600px;
+    background: var(--cor5) url(../img/background.png) center repeat fixed;
+    background-size: cover;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
+    /* Filtro deve ser aplicado apenas na imagem */
+}
+
+main > h1 {
+    
+}
+
+section.produtos {
+    margin: auto;
+    max-width: 80%;
+}
+
+/* Elementos gerais */
+
+a {
+    text-decoration: none;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: black;
+    color: white;
+    height: 60px;
+    text-align: center;
+}
+
+footer > p {
+    padding-top: 20px;
+}
+
+footer > p > a {
+    color: var(--cor3);
+}
+
+footer > p > a:hover {
+    color: var(--cor2);
+    background-color: var(--cor1);
+}
+
