@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+:root {
+    /* Variáveis de cor */
+    --cor1: #401A0C;
+    --cor2: #BF4417;
+    --cor3: #F27329;
+    --cor4: #F28B30;
+    --cor5: #F2C288;
+    /* Variáveis de fonte */
+    --fonte1: 'Gabriela';
+}
