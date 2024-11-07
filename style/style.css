@@ -34,7 +34,7 @@ header {
 header > h1 {
     font-size: 1.6em;
     font-family: var(--fonte1);
-    color: var(--cor5)
+    color: var(--cor5);
 }
 
 header > nav > a {
@@ -45,7 +45,7 @@ header > nav > a {
 
 nav {
     display: flex;
-    padding-left: 50%;
+    padding-left: 60%;
     margin-right: 20px;
 }
 
@@ -63,21 +63,23 @@ main {
 }
 
 main::before {
-    content: ""; /* Gera um elemento vazio*/
-    position: absolute; /* Definindo posição absoluta  */
-    inset: 0;
-    background-color: var(--cor5);
-    background-image: url(../img/background.png);
-    background-position: center;
-    background-repeat: repeat;
-    background-attachment: fixed;
+    content: ""; /* Gera um elemento vazio */
+    position: absolute; /* Definindo posição absoluta */
+    inset: 0; /* Define as posições como zero, e por consequência o pseudo-elemento ocupa todo o main */
+    background: var(--cor5) url(../img/background.png) center no-repeat fixed;
     background-size: cover;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
-    filter: brightness(0.3);
+    filter: brightness(0.3); /* Filtro aplicado */
 }
 
 main > h1 {
     position: absolute;
+    color: var(--cor5);
+    font-family: var(--fonte1);
+    top: 40%;
+    left: 2%;
+    width: 70%;
+    font-size: 3em;
 }
 
 
