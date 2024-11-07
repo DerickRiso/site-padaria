@@ -55,17 +55,33 @@ nav {
 
 /* Conteúdo principal */
 
+/* Colocando filtro no elemento pai, sem alterar elementos filhos*/
 main {
-    height: 600px;
-    background: var(--cor5) url(../img/background.png) center repeat fixed;
+    height: 90vh; /* É preciso definir tamanho */
+    width: 100%;
+    position: relative; /* Define que a pseudo-classe se ajustará ao main */
+}
+
+main::before {
+    content: ""; /* Gera um elemento vazio*/
+    position: absolute; /* Definindo posição absoluta  */
+    inset: 0;
+    background-color: var(--cor5);
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
     background-size: cover;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.295);
-    /* Filtro deve ser aplicado apenas na imagem */
+    filter: brightness(0.3);
 }
 
 main > h1 {
-    
+    position: absolute;
 }
+
+
+
 
 section.produtos {
     margin: auto;
