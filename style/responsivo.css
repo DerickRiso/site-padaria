@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@media(max-width: 900px) {
+    header > h1 {
+        font-size: 1.2em;
+        max-width: 19vw;
+    }
+
+    nav {
+        padding-left: 3vw;
+    }
+
+}
+
+@media(max-width: 600px) {
+    header {
+        position: relative;
+        height: 20vh;
+    }
+    
+    header > h1 {
+        min-width: 60%;
+
+        font-size: 2em;
+        text-align: center;
+    }
+
+    nav {
+        display: block;
+        position: absolute;
+        left: 20vw;
+        bottom: 1%;
+        
+        padding: 0;
+    }
+}
