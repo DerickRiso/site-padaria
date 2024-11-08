@@ -90,9 +90,31 @@ main > h1 {
     font-size: 3em;
 }
 
+/* Seção de produtos*/
+
 section.produtos {
     margin: auto;
-    max-width: 80%;
+    width: 75%;
+}
+
+section#paes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+section#bebidas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+section > article {
+    border: 1px solid black;
+    width: 300px;
 }
 
 /* Elementos gerais */
@@ -122,7 +144,5 @@ footer > p > a:hover {
     color: var(--cor2);
     background-color: var(--cor1);
 }
-
-
 
 
