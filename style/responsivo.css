@@ -1,13 +1,17 @@
 @charset "UTF-8";
 
+
+@media screen {
+    
+}
 @media(max-width: 900px) {
-    header > h1 {
-        font-size: 1.2em;
-        max-width: 19vw;
+    header > #caixa1 > h1 {
+        font-size: 1.3em;
     }
 
-    nav {
-        padding-left: 3vw;
+    header > #caixa {
+        max-width: 50px;
+        background-color: aqua;
     }
 
 }
@@ -16,9 +20,10 @@
     header {
         position: relative;
         height: 20vh;
+        background-color: aqua;
     }
     
-    header > h1 {
+    header > #caixa1 > h1 {
         min-width: 60%;
 
         font-size: 2em;
@@ -30,7 +35,6 @@
         position: absolute;
         left: 20vw;
         bottom: 1%;
-        
         padding: 0;
     }
 }
