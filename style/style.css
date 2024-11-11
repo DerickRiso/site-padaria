@@ -114,20 +114,26 @@ section#bebidas {
 
 section > article {
     background-color: var(--cor1);
-    border: 1px solid black;
-    width: 300px;
-    text-align: center;
+    color: var(--cor5);
+    border: 3px solid rgba(0, 0, 0, 0.589);
     border-radius: 20px;
     padding: 10px 20px;
+    width: 300px;
+    text-align: center;
+    font-family: var(--fonte1);
+}
+
+section > article > h3 {
+    padding-bottom: 10px;
 }
 
 section > article > img {
     border-radius: 100px;
+    transition: all ease-in-out 0.4s; /* Para que seja aplicada transição em todos os estados, é preciso definir fora do :hover */
 }
 
 section > article > img:hover{
-    scale: 97%;
-    transition: all ease-in-out 0.4s;
+    transform: scale(97%);
     border-radius: 60px;
     cursor: pointer;
 }
