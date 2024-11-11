@@ -94,7 +94,7 @@ main > h1 {
 
 section.produtos {
     margin: auto;
-    width: 75%;
+    width: 90%;
 }
 
 section#paes {
@@ -113,9 +113,26 @@ section#bebidas {
 }
 
 section > article {
+    background-color: var(--cor1);
     border: 1px solid black;
     width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
+
+section > article > img {
+    border-radius: 100px;
+}
+
+section > article > img:hover{
+    scale: 97%;
+    transition: all ease-in-out 0.4s;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+
 
 /* Elementos gerais */
 
