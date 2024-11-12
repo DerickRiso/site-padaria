@@ -29,7 +29,7 @@ header {
     height: 100px;
     width: 100%;
     display: flex;
-    
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.199);
 }
 
 header > #caixa1 {
@@ -57,7 +57,7 @@ header > nav > a {
     padding: 0px 10px;
 }
 
-#caixa1 > #logo {
+#caixa1 > a > #logo {
     width: 100px;
 }
 
@@ -146,6 +146,10 @@ section > article > img:hover{
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    font-family: var(--fonte1);
 }
 
 h2 {
